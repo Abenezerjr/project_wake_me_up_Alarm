@@ -1,0 +1,8 @@
+*.pyd
+*.exe
+main.spec
+*.pyz
+*.toc
+*.zip
+*.dll
+/_internal/
