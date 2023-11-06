@@ -1,5 +1,11 @@
 from tkinter import *
 import math
+import pygame
+from winsound import *
+
+play = lambda: PlaySound("sound.wav", SND_FILENAME)
+
+pygame.mixer.init()
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
@@ -12,6 +18,11 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 timer = None
+
+
+def playmusic():
+    pygame.mixer.music.load("sound.mp3")
+    pygame.mixer.music.play(loops=0)
 
 
 # ---------------------------- TIMER RESET ------------------------------- #
